@@ -757,7 +757,27 @@
                 width: 100%;
             }
         }
-    </style>
+    
+@keyframes glow {
+  0% { box-shadow: 0 0 0px rgba(227, 6, 19, 0.5); }
+  50% { box-shadow: 0 0 12px rgba(227, 6, 19, 0.7); }
+  100% { box-shadow: 0 0 0px rgba(227, 6, 19, 0.5); }
+}
+.hero-content .btn {
+  animation: glow 2s infinite;
+}
+
+
+@keyframes blink {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  50% { transform: scale(1.1); box-shadow: 0 0 15px 5px rgba(37, 211, 102, 0.4); }
+}
+.whatsapp-float {
+  animation: blink 2s infinite;
+}
+
+</style>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
@@ -792,7 +812,7 @@
             </div>
         </section>
 
-        <section id="convenios">
+        <section id="convenios" data-aos="fade-up">
             <div class="container">
                 <h2 class="section-title">Nuestros Convenios</h2>
                 <div class="convenios-grid">
@@ -834,13 +854,13 @@
             </div>
         </div>
 
-        <section id="documentos">
+        <section id="documentos" data-aos="fade-up">
             <div class="container documentos-container">
                 <h2 class="section-title">Documentos Importantes</h2>
                 <input type="search" id="filter-docs" placeholder="Buscar documentos por nombre..."
                     aria-label="Filtrar documentos">
                 <div class="document-list" id="document-list">
-                    <div class="document-item" data-title="contrato colectivo">
+                    <div class="document-item" data-aos="fade-left" data-title="contrato colectivo">
                         <i class="fas fa-file-pdf document-icon"></i>
                         <div class="document-info">
                             <h3>Contrato Colectivo</h3>
@@ -849,7 +869,7 @@
                         <a href="pdf/contrato_colectivo.pdf" target="_blank" rel="noopener noreferrer" class="btn">Ver
                             PDF</a>
                     </div>
-                    <div class="document-item" data-title="procedimientos administrativos">
+                    <div class="document-item" data-aos="fade-left" data-title="procedimientos administrativos">
                         <i class="fas fa-file-alt document-icon"></i>
                         <div class="document-info">
                             <h3>Procedimientos Administrativos</h3>
@@ -858,7 +878,7 @@
                         <a href="pdf/procedimientos.pdf" target="_blank" rel="noopener noreferrer" class="btn">Ver
                             PDF</a>
                     </div>
-                    <div class="document-item" data-title="código del trabajo">
+                    <div class="document-item" data-aos="fade-left" data-title="código del trabajo">
                         <i class="fas fa-book document-icon"></i>
                         <div class="document-info">
                             <h3>Código del Trabajo</h3>
@@ -867,7 +887,7 @@
                         <a href="pdf/codigo_trabajo.pdf" target="_blank" rel="noopener noreferrer" class="btn">Ver
                             PDF</a>
                     </div>
-                    <div class="document-item" data-title="estatutos">
+                    <div class="document-item" data-aos="fade-left" data-title="estatutos">
                         <i class="fas fa-gavel document-icon"></i>
                         <div class="document-info">
                             <h3>Estatutos del Sindicato</h3>
@@ -879,11 +899,11 @@
             </div>
         </section>
 
-        <section id="directiva">
+        <section id="directiva" data-aos="fade-up">
             <div class="container">
                 <h2 class="section-title">Nuestra Directiva</h2>
                 <div class="directiva-grid">
-                    <div class="flip-card">
+                    <div class="flip-card" data-aos="zoom-in">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="img/directiva_persona1.webp" alt="Foto de Juan Pérez" loading="lazy">
@@ -899,7 +919,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
+                    <div class="flip-card" data-aos="zoom-in">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="img/directiva_persona2.webp" alt="Foto de María González" loading="lazy">
@@ -915,7 +935,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
+                    <div class="flip-card" data-aos="zoom-in">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="img/directiva_persona3.webp" alt="Foto de Carlos Soto" loading="lazy">
@@ -931,7 +951,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
+                    <div class="flip-card" data-aos="zoom-in">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="img/directiva_persona4.webp" alt="Foto de Ana Rojas" loading="lazy">
@@ -947,7 +967,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
+                    <div class="flip-card" data-aos="zoom-in">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="img/directiva_persona5.webp" alt="Foto de Pedro Castillo" loading="lazy">
@@ -967,7 +987,7 @@
             </div>
         </section>
 
-        <section id="contacto">
+        <section id="contacto" data-aos="fade-up">
             <div class="container contacto-container">
                 <div class="contact-info">
                     <h2 class="section-title">Contáctanos</h2>
@@ -1150,6 +1170,10 @@
 
         });
     </script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 800, once: true });
+</script>
 </body>
 
 </html>
