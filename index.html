@@ -642,13 +642,24 @@
             font-size: 2.2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             z-index: 100;
-            animation: pulse 2.5s infinite;
-            transition: transform var(--transition-speed);
+            transition: all var(--transition-speed);
+        }
+
+        .whatsapp-float i {
+            color: var(--color-light);
+            transition: none;
         }
 
         .whatsapp-float:hover {
+            background-color: var(--color-whatsapp-dark);
+            color: var(--color-light);
+            /* Evita que el icono cambie */
             transform: scale(1.1);
-            animation-play-state: paused;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover i {
+            color: var(--color-light) !important;
         }
 
         @keyframes pulse {
@@ -1001,6 +1012,13 @@
             </ul>
             <p class="footer-copyright">&copy; <span id="copyright-year"></span> Sindicato N°2 de Trabajadores de
                 Televisión Nacional de Chile. Todos los derechos reservados.</p>
+            <p style="font-size:0.95rem; margin-bottom:1rem;">
+                Sitio creado por
+                <a href="https://wa.me/56966755025?text=Quiero%20cotizar%20una%20pagina%20web!" target="_blank"
+                    rel="noopener noreferrer" style="color:#FFD600;font-weight:600;">
+                    FaRu1983
+                </a>
+            </p>
         </div>
     </footer>
 
