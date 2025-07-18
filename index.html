@@ -1009,7 +1009,6 @@
         <section id="documentos">
             <div class="container documentos-container">
                 <h2 class="section-title" data-aos="fade-up">Documentos Importantes</h2>
-                <input type="search" id="filter-docs" placeholder="Buscar documentos por nombre..." aria-label="Filtrar documentos" data-aos="fade-up">
                 <div class="document-list" id="document-list">
                     <div class="document-item" data-aos="fade-up" data-title="contrato colectivo">
                         <i class="fas fa-file-pdf document-icon"></i>
@@ -1023,7 +1022,7 @@
                         <i class="fas fa-file-alt document-icon"></i>
                         <div class="document-info">
                             <h3>Procedimientos Administrativos</h3>
-                            <p>Guía sobre los procesos y trámites internos del sindicato.</p>
+                            <p>Guía sobre los procesos y trámites internos.</p>
                         </div>
                         <a href="pdf/procedimientos.pdf" rel="noopener noreferrer" class="btn">Ver PDF</a>
                     </div>
@@ -1042,14 +1041,6 @@
                             <p>Normas que rigen la organización y funcionamiento de nuestro sindicato.</p>
                         </div>
                         <a href="pdf/estatutos.pdf" rel="noopener noreferrer" class="btn">Ver PDF</a>
-                    </div>
-                    <div class="document-item" data-aos="fade-up" data-aos-delay="400" data-title="beneficios">
-                        <i class="fas fa-gift document-icon"></i>
-                        <div class="document-info">
-                            <h3>Beneficios y Bonos</h3>
-                            <p>Listado de beneficios y bonos directos para socios del sindicato.</p>
-                        </div>
-                        <a href="pdf/beneficios.pdf" rel="noopener noreferrer" class="btn">Ver PDF</a>
                     </div>
                 </div>
             </div>
@@ -1219,26 +1210,7 @@
                         link.classList.add('active');
                     }
                 });
-            });
-
-            // Document filter
-            const filterInput = document.getElementById('filter-docs');
-            const documentItems = document.querySelectorAll('.document-item');
-            
-            filterInput.addEventListener('input', (e) => {
-                const searchTerm = e.target.value.toLowerCase().trim();
-                
-                documentItems.forEach(item => {
-                    const title = item.dataset.title.toLowerCase();
-                    if (title.includes(searchTerm)) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-
-            
+            });            
 
             // Contact form to WhatsApp
             const contactForm = document.getElementById('contact-form');
