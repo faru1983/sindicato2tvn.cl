@@ -2,111 +2,170 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sindicato N°2 de TVN - Trabajando por nuestros derechos</title>
-    <!-- Meta tags for SEO and social media sharing -->
     <meta name="description"
-        content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Encuentra información sobre convenios, documentos, directiva y más.">
-    <meta name="keywords" content="sindicato, tvn, sindicato 2 tvn, derechos laborales, trabajadores tvn">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Felipe Andres Ramirez Urrutiaguer">
-    <meta property="og:title" content="Sindicato N°2 de TVN - Trabajando por nuestros derechos">
+        content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Encuentra información sobre convenios, documentos, directiva y más." />
+    <meta name="keywords" content="sindicato, tvn, sindicato 2 tvn, derechos laborales, trabajadores tvn" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Felipe Andres Ramirez Urrutiaguer" />
+    <meta property="og:title" content="Sindicato N°2 de TVN - Trabajando por nuestros derechos" />
     <meta property="og:description"
-        content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Información sobre convenios, documentos, directiva y más.">
-    <meta property="og:image" content="https://www.sindicato2tvn.cl/img/logo.webp">
-    <meta property="og:url" content="https://www.sindicato2tvn.cl/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sindicato N°2 de TVN - Trabajando por nuestros derechos">
+        content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Información sobre convenios, documentos, directiva y más." />
+    <meta property="og:image" content="https://www.sindicato2tvn.cl/img/logo.webp" />
+    <meta property="og:url" content="https://www.sindicato2tvn.cl/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sindicato N°2 de TVN - Trabajando por nuestros derechos" />
     <meta name="twitter:description"
-        content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Información sobre convenios, documentos, directiva y más.">
-    <meta name="twitter:image" content="https://www.sindicato2tvn.cl/img/logo.webp">
+        content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Información sobre convenios, documentos, directiva y más." />
+    <meta name="twitter:image" content="https://www.sindicato2tvn.cl/img/logo.webp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts: Inter for modern look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom styles to override or extend Tailwind, ensuring Inter font is used */
-        html, body {
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            width: 100vw; /* Ensure html and body take full viewport width */
-            min-height: 100vh; /* Ensure html and body take full viewport height */
+        html,
+        body {
+            font-family: "Inter", sans-serif;
+            overflow-x: hidden;
+            width: 100vw;
+            min-height: 100vh;
         }
 
-        /* Custom animations */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(50px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         @keyframes bounceIn {
-            0% { transform: scale(0.8); opacity: 0; }
-            50% { transform: scale(1.05); opacity: 1; }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         @keyframes pulseGlow {
-            0% { box-shadow: 0 0 0px rgba(227, 6, 19, 0.5); }
-            50% { box-shadow: 0 0 15px 5px rgba(227, 6, 19, 0.7); }
-            100% { box-shadow: 0 0 0px rgba(227, 6, 19, 0.5); }
+            0% {
+                box-shadow: 0 0 0px rgba(227, 6, 19, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 15px 5px rgba(227, 6, 19, 0.7);
+            }
+
+            100% {
+                box-shadow: 0 0 0px rgba(227, 6, 19, 0.5);
+            }
         }
 
         @keyframes whatsappPulse {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
 
-        /* Apply animations */
-        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
-        .animate-slideInLeft { animation: slideInLeft 0.8s ease-out forwards; }
-        .animate-slideInRight { animation: slideInRight 0.8s ease-out forwards; }
-        .animate-bounceIn { animation: bounceIn 0.8s ease-out forwards; }
-        .animate-pulseGlow { animation: pulseGlow 2s infinite; }
-        .animate-whatsappPulse { animation: whatsappPulse 2s infinite; }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
 
-        /* Specific styles for elements */
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+
+        .animate-bounceIn {
+            animation: bounceIn 0.8s ease-out forwards;
+        }
+
+        .animate-pulseGlow {
+            animation: pulseGlow 2s infinite;
+        }
+
+        .animate-whatsappPulse {
+            animation: whatsappPulse 2s infinite;
+        }
+
         .hero-bg {
-            background: linear-gradient(120deg, rgba(227, 6, 19, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%), url('img/fondo.webp') no-repeat center center/cover;
+            background: linear-gradient(120deg,
+                    rgba(227, 6, 19, 0.8) 0%,
+                    rgba(0, 0, 0, 0.6) 100%),
+                url("img/fondo.webp") no-repeat center center/cover;
             background-attachment: fixed;
         }
 
         .nav-link-underline::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: -5px;
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #E30613; /* Tailwind's red-600 */
+            background-color: #e30613;
             transition: width 0.3s ease-in-out;
         }
 
@@ -119,12 +178,12 @@
             background: rgba(0, 0, 0, 0.6);
         }
 
-        /* Styles for directiva cards */
         .directiva-card {
             background-color: white;
-            border-radius: 0.75rem; /* rounded-xl */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
-            padding: 1.5rem; /* p-6 */
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
             text-align: center;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             display: flex;
@@ -134,212 +193,313 @@
         }
 
         .directiva-card:hover {
-            transform: translateY(-12px) scale(1.02); /* More pronounced move up and slight scale */
-            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2), 0 6px 10px -3px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2),
+                0 6px 10px -3px rgba(0, 0, 0, 0.1);
         }
 
         .directiva-card img {
             width: 100%;
-            height: 240px; /* Fixed height for consistency */
+            height: 240px;
             object-fit: cover;
             object-position: center top;
-            border-radius: 0.5rem; /* rounded-lg */
-            margin-bottom: 1rem; /* mb-4 */
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
         }
 
-        /* Mobile Menu specific styles for transform transition */
         #mobile-menu {
-            left: 0; /* Ensures it starts from the left edge */
-            transform: translateX(100%); /* Hidden state */
+            left: 0;
+            transform: translateX(100%);
         }
 
-        #mobile-menu.right-0 { /* This class is toggled by JS to show it */
-            transform: translateX(0); /* Visible state */
+        #mobile-menu.right-0 {
+            transform: translateX(0);
         }
     </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-
-    <!-- Header and Navigation -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 backdrop-blur-lg shadow-md py-3 transition-all duration-300 ease-in-out" id="main-header">
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 backdrop-blur-lg shadow-md py-3 transition-all duration-300 ease-in-out"
+        id="main-header">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="#inicio">
-                <img src="img/logo.webp" alt="Logo Sindicato N°2 TVN" class="h-12 md:h-14 transition-all duration-300" loading="lazy">
+                <img src="img/logo.webp" alt="Logo Sindicato N°2 TVN" class="h-12 md:h-14 transition-all duration-300"
+                    loading="lazy" />
             </a>
             <nav>
                 <ul class="hidden md:flex space-x-8">
-                    <li><a href="#inicio" class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 active scroll-link">Inicio</a></li>
-                    <li><a href="#convenios" class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Convenios</a></li>
-                    <li><a href="#documentos" class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Documentos</a></li>
-                    <li><a href="#directiva" class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Directiva</a></li>
-                    <li><a href="#contacto" class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Contáctanos</a></li>
+                    <li>
+                        <a href="#inicio"
+                            class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 active scroll-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#convenios"
+                            class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Convenios</a>
+                    </li>
+                    <li>
+                        <a href="#documentos"
+                            class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Documentos</a>
+                    </li>
+                    <li>
+                        <a href="#directiva"
+                            class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Directiva</a>
+                    </li>
+                    <li>
+                        <a href="#contacto"
+                            class="nav-link-underline relative text-gray-700 hover:text-red-600 font-semibold py-1 scroll-link">Contáctanos</a>
+                    </li>
                 </ul>
             </nav>
-            <!-- Mobile Hamburger Menu -->
             <button class="md:hidden text-gray-800 text-2xl focus:outline-none" id="hamburger" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="fixed top-0 w-full min-h-screen bg-white z-50 flex flex-col justify-center items-center transition-transform duration-300 ease-in-out md:hidden">
-            <button class="absolute top-6 right-6 text-gray-800 text-3xl focus:outline-none" id="close-mobile-menu" aria-label="Cerrar menú">
+        <div id="mobile-menu"
+            class="fixed top-0 w-full min-h-screen bg-white z-50 flex flex-col justify-center items-center transition-transform duration-300 ease-in-out md:hidden">
+            <button class="absolute top-6 right-6 text-gray-800 text-3xl focus:outline-none" id="close-mobile-menu"
+                aria-label="Cerrar menú">
                 <i class="fas fa-times"></i>
             </button>
             <ul class="flex flex-col space-y-6 text-center w-full px-4 py-20 overflow-y-auto">
-                <li><a href="#inicio" class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Inicio</a></li>
-                <li><a href="#convenios" class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Convenios</a></li>
-                <li><a href="#documentos" class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Documentos</a></li>
-                <li><a href="#directiva" class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Directiva</a></li>
-                <li><a href="#contacto" class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Contáctanos</a></li>
+                <li>
+                    <a href="#inicio"
+                        class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#convenios"
+                        class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Convenios</a>
+                </li>
+                <li>
+                    <a href="#documentos"
+                        class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Documentos</a>
+                </li>
+                <li>
+                    <a href="#directiva"
+                        class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Directiva</a>
+                </li>
+                <li>
+                    <a href="#contacto"
+                        class="text-gray-800 text-2xl font-semibold hover:text-red-600 transition-colors mobile-nav-link block py-2 scroll-link">Contáctanos</a>
+                </li>
             </ul>
         </div>
     </header>
-
     <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="relative min-h-screen flex items-center justify-center text-center text-white hero-bg">
+        <section id="inicio"
+            class="relative min-h-screen flex items-center justify-center text-center text-white hero-bg">
             <div class="relative z-10 max-w-4xl px-4" data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg" data-aos="fade-down" data-aos-duration="1800">Sindicato N°2 de TVN</h1>
-                <p class="text-xl md:text-2xl font-light mb-8 drop-shadow-md" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1800">Trabajando unidos por nuestros derechos y bienestar</p>
-                <a href="#convenios" class="inline-block px-8 py-3 bg-red-600 text-white rounded-full text-lg font-bold hover:bg-red-700 transition-all duration-300 ease-in-out transform hover:scale-105 animate-pulseGlow" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500">Ver Convenios</a>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg" data-aos="fade-down"
+                    data-aos-duration="1800">
+                    Sindicato N°2 de TVN
+                </h1>
+                <p class="text-xl md:text-2xl font-light mb-8 drop-shadow-md" data-aos="fade-up" data-aos-delay="500"
+                    data-aos-duration="1800">
+                    Trabajando unidos por nuestros derechos y bienestar
+                </p>
+                <a href="#convenios"
+                    class="inline-block px-8 py-3 bg-red-600 text-white rounded-full text-lg font-bold hover:bg-red-700 transition-all duration-300 ease-in-out transform hover:scale-105 animate-pulseGlow"
+                    data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500">Ver Convenios</a>
             </div>
         </section>
-
-        <!-- Convenios Section -->
         <section id="convenios" class="py-16 bg-gray-100" data-aos="fade-up" data-aos-offset="200">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down" data-aos-duration="1000">Nuestros Convenios
-                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
+                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down"
+                    data-aos-duration="1000">
+                    Nuestros Convenios
+                    <span
+                        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer" data-modal="coopeuch" data-aos="flip-left" data-aos-delay="100">
-                        <img src="img/convenio_coopeuch.webp" alt="Logo Coopeuch" class="h-16 mx-auto mb-4 object-contain" loading="lazy">
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer"
+                        data-modal="coopeuch" data-aos="flip-left" data-aos-delay="100">
+                        <img src="img/convenio_coopeuch.webp" alt="Logo Coopeuch"
+                            class="h-16 mx-auto mb-4 object-contain" loading="lazy" />
                         <h3 class="text-xl font-semibold mb-2">Coopeuch</h3>
-                        <p class="text-gray-600 mb-4">Accede a beneficios y productos financieros con condiciones preferenciales.</p>
-                        <button class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors" data-modal="coopeuch">Ver Beneficio</button>
+                        <p class="text-gray-600 mb-4">
+                            Accede a beneficios y productos financieros con condiciones
+                            preferenciales.
+                        </p>
+                        <button
+                            class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors"
+                            data-modal="coopeuch">
+                            Ver Beneficio
+                        </button>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer" data-modal="abastible" data-aos="flip-left" data-aos-delay="200">
-                        <img src="img/convenio_abastible.webp" alt="Logo Abastible" class="h-16 mx-auto mb-4 object-contain" loading="lazy">
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer"
+                        data-modal="abastible" data-aos="flip-left" data-aos-delay="200">
+                        <img src="img/convenio_abastible.webp" alt="Logo Abastible"
+                            class="h-16 mx-auto mb-4 object-contain" loading="lazy" />
                         <h3 class="text-xl font-semibold mb-2">Abastible</h3>
-                        <p class="text-gray-600 mb-4">Descuentos especiales en la compra de gas para tu hogar durante todo el año.</p>
-                        <button class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors" data-modal="abastible">Ver Beneficio</button>
+                        <p class="text-gray-600 mb-4">
+                            Descuentos especiales en la compra de gas para tu hogar durante
+                            todo el año.
+                        </p>
+                        <button
+                            class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors"
+                            data-modal="abastible">
+                            Ver Beneficio
+                        </button>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer" data-modal="lipigas" data-aos="flip-left" data-aos-delay="300">
-                        <img src="img/convenio_lipigas.webp" alt="Logo Lipigas" class="h-16 mx-auto mb-4 object-contain" loading="lazy">
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer"
+                        data-modal="lipigas" data-aos="flip-left" data-aos-delay="300">
+                        <img src="img/convenio_lipigas.webp" alt="Logo Lipigas" class="h-16 mx-auto mb-4 object-contain"
+                            loading="lazy" />
                         <h3 class="text-xl font-semibold mb-2">Lipigas</h3>
-                        <p class="text-gray-600 mb-4">Obtén precios rebajados en cargas de gas y servicios asociados para socios.</p>
-                        <button class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors" data-modal="lipigas">Ver Beneficio</button>
+                        <p class="text-gray-600 mb-4">
+                            Obtén precios rebajados en cargas de gas y servicios asociados
+                            para socios.
+                        </p>
+                        <button
+                            class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors"
+                            data-modal="lipigas">
+                            Ver Beneficio
+                        </button>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer" data-modal="dental" data-aos="flip-left" data-aos-delay="400">
-                        <img src="img/convenio_dental.webp" alt="Logo Clínica Dental" class="h-16 mx-auto mb-4 object-contain" loading="lazy">
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer"
+                        data-modal="dental" data-aos="flip-left" data-aos-delay="400">
+                        <img src="img/convenio_dental.webp" alt="Logo Clínica Dental"
+                            class="h-16 mx-auto mb-4 object-contain" loading="lazy" />
                         <h3 class="text-xl font-semibold mb-2">Clínica Dental</h3>
-                        <p class="text-gray-600 mb-4">Atención odontológica de calidad con aranceles preferenciales para ti y tu familia.</p>
-                        <button class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors" data-modal="dental">Ver Beneficio</button>
+                        <p class="text-gray-600 mb-4">
+                            Atención odontológica de calidad con aranceles preferenciales
+                            para ti y tu familia.
+                        </p>
+                        <button
+                            class="btn-convenio px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors"
+                            data-modal="dental">
+                            Ver Beneficio
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Modal for Convenios -->
-        <div id="modal-bg" class="fixed inset-0 modal-bg hidden items-center justify-center z-[2000] opacity-0 transition-opacity duration-300">
-            <div id="modal-convenio-content" class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-11/12 text-center relative transform scale-90 opacity-0 transition-all duration-300 ease-out">
-                <button class="modal-close absolute top-4 right-4 text-gray-500 text-3xl hover:text-red-600 transition-transform duration-300 transform hover:rotate-90 focus:outline-none" aria-label="Cerrar">&times;</button>
-                <img id="modal-img" src="" alt="" class="h-16 mx-auto mb-4 object-contain">
+        <div id="modal-bg"
+            class="fixed inset-0 modal-bg hidden items-center justify-center z-[2000] opacity-0 transition-opacity duration-300">
+            <div id="modal-convenio-content"
+                class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-11/12 text-center relative transform scale-90 opacity-0 transition-all duration-300 ease-out">
+                <button
+                    class="modal-close absolute top-4 right-4 text-gray-500 text-3xl hover:text-red-600 transition-transform duration-300 transform hover:rotate-90 focus:outline-none"
+                    aria-label="Cerrar">
+                    &times;
+                </button>
+                <img id="modal-img" src="" alt="" class="h-16 mx-auto mb-4 object-contain" />
                 <h3 id="modal-title" class="text-2xl font-bold mb-3 text-gray-800"></h3>
                 <p id="modal-desc" class="text-gray-700 mb-6"></p>
-                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 bg-red-600 text-white rounded-full text-base font-semibold hover:bg-red-700 transition-colors">Ir a la empresa</a>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer"
+                    class="inline-block px-8 py-3 bg-red-600 text-white rounded-full text-base font-semibold hover:bg-red-700 transition-colors">Ir
+                    a la empresa</a>
             </div>
         </div>
-
-        <!-- Documentos Section -->
         <section id="documentos" class="py-16 bg-white" data-aos="fade-up" data-aos-offset="200">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down" data-aos-duration="1000">Documentos Importantes
-                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
+                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down"
+                    data-aos-duration="1000">
+                    Documentos Importantes
+                    <span
+                        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
                 </h2>
                 <input type="search" id="filter-docs" placeholder="Buscar documentos por nombre..."
                     class="w-full p-3 mb-8 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300 transition-all"
-                    aria-label="Filtrar documentos" data-aos="fade-right" data-aos-duration="1200">
+                    aria-label="Filtrar documentos" data-aos="fade-right" data-aos-duration="1200" />
                 <div class="document-list" id="document-list">
-                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600" data-title="contrato colectivo" data-aos="fade-left" data-aos-delay="100">
+                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600"
+                        data-title="contrato colectivo" data-aos="fade-left" data-aos-delay="100">
                         <i class="fas fa-file-pdf text-red-600 text-3xl mr-6 w-10 text-center"></i>
                         <div class="flex-grow">
                             <h3 class="text-xl font-semibold mb-1">Contrato Colectivo</h3>
-                            <p class="text-gray-600 text-sm">Documento que regula las relaciones laborales y beneficios del sindicato.</p>
+                            <p class="text-gray-600 text-sm">
+                                Documento que regula las relaciones laborales y beneficios del
+                                sindicato.
+                            </p>
                         </div>
-                        <a href="pdf/contrato_colectivo.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver PDF</a>
+                        <a href="pdf/contrato_colectivo.pdf" target="_blank" rel="noopener noreferrer"
+                            class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver
+                            PDF</a>
                     </div>
-                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600" data-title="procedimientos administrativos" data-aos="fade-left" data-aos-delay="200">
+                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600"
+                        data-title="procedimientos administrativos" data-aos="fade-left" data-aos-delay="200">
                         <i class="fas fa-file-alt text-red-600 text-3xl mr-6 w-10 text-center"></i>
                         <div class="flex-grow">
                             <h3>Procedimientos Administrativos</h3>
-                            <p class="text-gray-600 text-sm">Guía sobre los procesos y trámites internos del sindicato.</p>
+                            <p class="text-gray-600 text-sm">
+                                Guía sobre los procesos y trámites internos del sindicato.
+                            </p>
                         </div>
-                        <a href="pdf/procedimientos.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver PDF</a>
+                        <a href="pdf/procedimientos.pdf" target="_blank" rel="noopener noreferrer"
+                            class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver
+                            PDF</a>
                     </div>
-                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600" data-title="código del trabajo" data-aos="fade-left" data-aos-delay="300">
+                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600"
+                        data-title="código del trabajo" data-aos="fade-left" data-aos-delay="300">
                         <i class="fas fa-book text-red-600 text-3xl mr-6 w-10 text-center"></i>
                         <div class="flex-grow">
                             <h3>Código del Trabajo</h3>
-                            <p class="text-gray-600 text-sm">Versión actualizada de la ley que rige las relaciones laborales en Chile.</p>
+                            <p class="text-gray-600 text-sm">
+                                Versión actualizada de la ley que rige las relaciones
+                                laborales en Chile.
+                            </p>
                         </div>
-                        <a href="pdf/codigo_trabajo.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver PDF</a>
+                        <a href="pdf/codigo_trabajo.pdf" target="_blank" rel="noopener noreferrer"
+                            class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver
+                            PDF</a>
                     </div>
-                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600" data-title="estatutos" data-aos="fade-left" data-aos-delay="400">
+                    <div class="document-item flex items-center bg-gray-100 p-5 mb-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-red-600"
+                        data-title="estatutos" data-aos="fade-left" data-aos-delay="400">
                         <i class="fas fa-gavel text-red-600 text-3xl mr-6 w-10 text-center"></i>
                         <div class="flex-grow">
                             <h3>Estatutos del Sindicato</h3>
-                            <p class="text-gray-600 text-sm">Normas que rigen la organización y funcionamiento de nuestro sindicato.</p>
+                            <p class="text-gray-600 text-sm">
+                                Normas que rigen la organización y funcionamiento de nuestro
+                                sindicato.
+                            </p>
                         </div>
-                        <a href="pdf/estatutos.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver PDF</a>
+                        <a href="pdf/estatutos.pdf" target="_blank" rel="noopener noreferrer"
+                            class="px-5 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors ml-4">Ver
+                            PDF</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Directiva Section -->
         <section id="directiva" class="py-16 bg-gray-100" data-aos="fade-up" data-aos-offset="200">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down" data-aos-duration="1000">Nuestra Directiva
-                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
+                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down"
+                    data-aos-duration="1000">
+                    Nuestra Directiva
+                    <span
+                        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
                 </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">
-                    <!-- Directiva Card 1 -->
                     <div class="directiva-card w-72 h-96" data-aos="flip-up" data-aos-delay="100">
-                        <img src="img/directiva_persona1.webp" alt="Foto de Jorge Arellano Soto" loading="lazy">
+                        <img src="img/directiva_persona1.webp" alt="Foto de Jorge Arellano Soto" loading="lazy" />
                         <div class="p-4 flex-grow flex flex-col justify-center">
                             <h3 class="text-xl font-bold mb-1">Jorge Arellano Soto</h3>
                             <p class="text-red-600 font-semibold">Presidente</p>
                         </div>
                     </div>
-                    <!-- Directiva Card 2 -->
                     <div class="directiva-card w-72 h-96" data-aos="flip-up" data-aos-delay="200">
-                        <img src="img/directiva_persona2.webp" alt="Foto de Cristian Luco Caro" loading="lazy">
+                        <img src="img/directiva_persona2.webp" alt="Foto de Cristian Luco Caro" loading="lazy" />
                         <div class="p-4 flex-grow flex flex-col justify-center">
                             <h3 class="text-xl font-bold mb-1">Cristian Luco Caro</h3>
                             <p class="text-red-600 font-semibold">Secretario</p>
                         </div>
                     </div>
-                    <!-- Directiva Card 3 -->
                     <div class="directiva-card w-72 h-96" data-aos="flip-up" data-aos-delay="300">
-                        <img src="img/directiva_persona3.webp" alt="Foto de Jessica Soto Cáceres" loading="lazy">
+                        <img src="img/directiva_persona3.webp" alt="Foto de Jessica Soto Cáceres" loading="lazy" />
                         <div class="p-4 flex-grow flex flex-col justify-center">
                             <h3 class="text-xl font-bold mb-1">Jessica Soto Cáceres</h3>
                             <p class="text-red-600 font-semibold">Tesorera</p>
                         </div>
                     </div>
-                    <!-- Directiva Card 4 -->
                     <div class="directiva-card w-72 h-96" data-aos="flip-up" data-aos-delay="400">
-                        <img src="img/directiva_persona4.webp" alt="Foto de Lorena Castro Martinelli" loading="lazy">
+                        <img src="img/directiva_persona4.webp" alt="Foto de Lorena Castro Martinelli" loading="lazy" />
                         <div class="p-4 flex-grow flex flex-col justify-center">
                             <h3 class="text-xl font-bold mb-1">Lorena Castro Martinelli</h3>
                             <p class="text-red-600 font-semibold">Directora</p>
                         </div>
                     </div>
-                    <!-- Directiva Card 5 -->
                     <div class="directiva-card w-72 h-96" data-aos="flip-up" data-aos-delay="500">
-                        <img src="img/directiva_persona5.webp" alt="Foto de Pedro Chaskel Robles" loading="lazy">
+                        <img src="img/directiva_persona5.webp" alt="Foto de Pedro Chaskel Robles" loading="lazy" />
                         <div class="p-4 flex-grow flex flex-col justify-center">
                             <h3 class="text-xl font-bold mb-1">Pedro Chaskel Robles</h3>
                             <p class="text-red-600 font-semibold">Director</p>
@@ -348,173 +508,221 @@
                 </div>
             </div>
         </section>
-
-        <!-- Contacto Section -->
         <section id="contacto" class="py-16 bg-white" data-aos="fade-up" data-aos-offset="200">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down" data-aos-duration="1000">Contáctanos
-                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
+                <h2 class="text-4xl font-bold text-center mb-12 relative pb-4" data-aos="fade-down"
+                    data-aos-duration="1000">
+                    Contáctanos
+                    <span
+                        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600 rounded-full"></span>
                 </h2>
-                <form id="contact-form" class="contact-form bg-gray-100 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <form id="contact-form" class="contact-form bg-gray-100 p-8 rounded-xl shadow-lg" data-aos="fade-up"
+                    data-aos-delay="200">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre" required
-                            class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" data-aos="fade-right" data-aos-delay="300">
+                            class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"
+                            data-aos="fade-right" data-aos-delay="300" />
                         <input type="text" id="apellido" name="apellido" placeholder="Apellido" required
-                            class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" data-aos="fade-left" data-aos-delay="400">
+                            class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"
+                            data-aos="fade-left" data-aos-delay="400" />
                     </div>
                     <input type="email" id="email" name="email" placeholder="E-mail" required
-                        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" data-aos="fade-up" data-aos-delay="500">
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"
+                        data-aos="fade-up" data-aos-delay="500" />
                     <input type="tel" id="celular" name="celular" placeholder="Celular (ej: 912345678)" required
-                        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" data-aos="fade-up" data-aos-delay="600">
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"
+                        data-aos="fade-up" data-aos-delay="600" />
                     <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required
-                        class="w-full p-3 mb-6 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300 min-h-[120px] resize-y" data-aos="fade-up" data-aos-delay="700"></textarea>
-                    <button type="submit" class="w-full py-3 bg-green-500 text-white rounded-full text-lg font-bold hover:bg-green-600 transition-colors flex items-center justify-center space-x-2" data-aos="zoom-in" data-aos-delay="800">
-                        <i class="fab fa-whatsapp"></i> <span>Enviar a WhatsApp</span>
+                        class="w-full p-3 mb-6 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300 min-h-[120px] resize-y"
+                        data-aos="fade-up" data-aos-delay="700"></textarea>
+                    <button type="submit"
+                        class="w-full py-3 bg-green-500 text-white rounded-full text-lg font-bold hover:bg-green-600 transition-colors flex items-center justify-center space-x-2"
+                        data-aos="zoom-in" data-aos-delay="800">
+                        <i class="fab fa-whatsapp"></i> <span>Enviar por WhatsApp</span>
                     </button>
                 </form>
             </div>
         </section>
-
-        <!-- Google Map Section (Full Width) -->
         <section class="w-full py-0" data-aos="fade-up" data-aos-offset="200">
-            <div class="map-container w-full h-[450px] rounded-none overflow-hidden shadow-xl" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="map-container w-full h-[450px] rounded-none overflow-hidden shadow-xl" data-aos="zoom-in"
+                data-aos-duration="1500">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.859564398546!2d-70.62711662354928!3d-33.426905496308095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c589740faa45%3A0x477fb55f8eedfa64!2sTVN%20Televisi%C3%B3n%20Nacional%20de%20Chile!5e0!3m2!1ses-419!2scl!4v1752810415093!5m2!1ses-419!2scl"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-
     </main>
-
-    <!-- Footer -->
     <footer class="bg-red-800 text-white py-12" data-aos="fade-up" data-aos-offset="100">
         <div class="container mx-auto px-4 text-center">
             <ul class="flex justify-center space-x-6 mb-6">
-                <li data-aos="zoom-in" data-aos-delay="100"><a href="https://www.instagram.com/sindicato_2tvn/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Instagram" class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i class="fab fa-instagram"></i></a></li>
-                <li data-aos="zoom-in" data-aos-delay="200"><a href="https://www.facebook.com/s2tvn/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Facebook" class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i class="fab fa-facebook"></i></a></li>
-                <li data-aos="zoom-in" data-aos-delay="300"><a href="https://wa.me/56992255546" target="_blank" rel="noopener noreferrer"
-                        aria-label="WhatsApp" class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i class="fab fa-whatsapp"></i></a></li>
-                <li data-aos="zoom-in" data-aos-delay="400"><a href="http://www.sindicato2tvn.cl/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Sitio Web" class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i class="fas fa-globe"></i></a></li>
-                <li data-aos="zoom-in" data-aos-delay="500"><a href="mailto:contacto@sindicato2tvn.cl" aria-label="Email" class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i class="fas fa-envelope"></i></a>
+                <li data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://www.instagram.com/sindicato_2tvn/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://www.facebook.com/s2tvn/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="300">
+                    <a href="https://wa.me/56992255546" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                        class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i
+                            class="fab fa-whatsapp"></i></a>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="400">
+                    <a href="http://www.sindicato2tvn.cl/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Sitio Web"
+                        class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i
+                            class="fas fa-globe"></i></a>
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="500">
+                    <a href="mailto:contacto@sindicato2tvn.cl" aria-label="Email"
+                        class="text-white text-3xl hover:text-red-300 transition-colors transform hover:scale-110"><i
+                            class="fas fa-envelope"></i></a>
                 </li>
             </ul>
-            <p class="text-gray-300 text-sm mb-2" data-aos="fade-up" data-aos-delay="600">&copy; <span id="copyright-year"></span> Sindicato N°2 de Trabajadores de
-                Televisión Nacional de Chile. Todos los derechos reservados.</p>
+            <p class="text-gray-300 text-sm mb-2" data-aos="fade-up" data-aos-delay="600">
+                &copy; <span id="copyright-year"></span> Sindicato N°2 de Trabajadores
+                de Televisión Nacional de Chile. Todos los derechos reservados.
+            </p>
             <p class="text-gray-300 text-sm" data-aos="fade-up" data-aos-delay="700">
                 Sitio creado por
                 <a href="https://wa.me/56966755025?text=Quiero%20cotizar%20una%20pagina%20web!" target="_blank"
-                    rel="noopener noreferrer" class="text-yellow-400 font-semibold hover:text-yellow-300 transition-colors">
+                    rel="noopener noreferrer"
+                    class="text-yellow-400 font-semibold hover:text-yellow-300 transition-colors">
                     FaRu1983
                 </a>
             </p>
         </div>
     </footer>
-
-    <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/56992255546?text=Hola,%20les%20escribo%20desde%20su%20página%20web!" target="_blank"
-        rel="noopener noreferrer" class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-4xl shadow-xl z-40 transition-all duration-300 hover:scale-110 animate-whatsappPulse" aria-label="Contactar por WhatsApp" data-aos="zoom-in" data-aos-delay="1000">
+        rel="noopener noreferrer"
+        class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-4xl shadow-xl z-40 transition-all duration-300 hover:scale-110 animate-whatsappPulse"
+        aria-label="Contactar por WhatsApp" data-aos="zoom-in" data-aos-delay="1000">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- AOS Library for scroll animations -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1200, // Duración aumentada para efectos más notorios
-            once: true, // La animación solo ocurre una vez al desplazarse hacia abajo
-            mirror: false, // Los elementos no se animan al desplazarse hacia arriba
-            offset: 150, // Offset (en px) desde la parte superior de la pantalla para activar las animaciones
+            duration: 1200,
+            once: true,
+            mirror: false,
+            offset: 150,
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            // --- MOBILE MENU TOGGLE ---
-            const hamburger = document.getElementById('hamburger');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const closeMobileMenu = document.getElementById('close-mobile-menu');
-            const mobileNavLinks = mobileMenu.querySelectorAll('.mobile-nav-link');
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const closeMobileMenu = document.getElementById("close-mobile-menu");
+            const mobileNavLinks = mobileMenu.querySelectorAll(".mobile-nav-link");
 
-            hamburger.addEventListener('click', () => {
-                mobileMenu.classList.add('right-0');
-                mobileMenu.classList.remove('right-[-100%]');
+            hamburger.addEventListener("click", () => {
+                mobileMenu.classList.add("right-0");
+                mobileMenu.classList.remove("right-[-100%]");
             });
 
             const hideMobileMenu = () => {
-                mobileMenu.classList.remove('right-0');
-                mobileMenu.classList.add('right-[-100%]');
+                mobileMenu.classList.remove("right-0");
+                mobileMenu.classList.add("right-[-100%]");
             };
 
-            closeMobileMenu.addEventListener('click', hideMobileMenu);
-            mobileNavLinks.forEach(link => link.addEventListener('click', hideMobileMenu));
+            closeMobileMenu.addEventListener("click", hideMobileMenu);
+            mobileNavLinks.forEach((link) =>
+                link.addEventListener("click", hideMobileMenu)
+            );
 
-            // Close menu if clicked outside
-            document.addEventListener('click', (e) => {
-                if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target) && mobileMenu.classList.contains('right-0')) {
+            document.addEventListener("click", (e) => {
+                if (
+                    !mobileMenu.contains(e.target) &&
+                    !hamburger.contains(e.target) &&
+                    mobileMenu.classList.contains("right-0")
+                ) {
                     hideMobileMenu();
                 }
             });
 
-            // --- ACTIVE SECTION HIGHLIGHT IN NAV ---
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link-underline');
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link-underline");
 
             const observerOptions = {
                 root: null,
-                rootMargin: '0px',
-                threshold: 0.4 // Adjust as needed for when a section is considered "active"
+                rootMargin: "0px",
+                threshold: 0.4,
             };
 
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
+                entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href').substring(1) === entry.target.id) {
-                                link.classList.add('active');
+                        navLinks.forEach((link) => {
+                            link.classList.remove("active");
+                            if (
+                                link.getAttribute("href").substring(1) === entry.target.id
+                            ) {
+                                link.classList.add("active");
                             }
                         });
                     }
                 });
             }, observerOptions);
 
-            sections.forEach(sec => observer.observe(sec));
+            sections.forEach((sec) => observer.observe(sec));
 
+            const filterInput = document.getElementById("filter-docs");
+            const documentItems = document.querySelectorAll(
+                "#document-list .document-item"
+            );
 
-            // --- DOCUMENT FILTER ---
-            const filterInput = document.getElementById('filter-docs');
-            const documentItems = document.querySelectorAll('#document-list .document-item');
-
-            filterInput.addEventListener('input', (e) => {
+            filterInput.addEventListener("input", (e) => {
                 const searchTerm = e.target.value.toLowerCase().trim();
-                documentItems.forEach(item => {
+                documentItems.forEach((item) => {
                     const title = item.dataset.title.toLowerCase();
                     if (title.includes(searchTerm)) {
-                        item.style.display = 'flex';
+                        item.style.display = "flex";
                     } else {
-                        item.style.display = 'none';
+                        item.style.display = "none";
                     }
                 });
             });
 
-            // --- CONVENIOS MODAL ---
             const conveniosData = {
-                coopeuch: { img: 'img/convenio_coopeuch.webp', title: 'Coopeuch', desc: 'Accede a beneficios y productos financieros con condiciones preferenciales.', link: 'https://www.coopeuch.cl/' },
-                abastible: { img: 'img/convenio_abastible.webp', title: 'Abastible', desc: 'Descuentos especiales en la compra de gas para tu hogar durante todo el año.', link: 'https://www.abastible.cl/' },
-                lipigas: { img: 'img/convenio_lipigas.webp', title: 'Lipigas', desc: 'Obtén precios rebajados en cargas de gas y servicios asociados para socios.', link: 'https://www.lipigas.cl/' },
-                dental: { img: 'img/convenio_dental.webp', title: 'Clínica Dental', desc: 'Atención odontológica de calidad con aranceles preferenciales para ti y tu familia.', link: '#' }
+                coopeuch: {
+                    img: "img/convenio_coopeuch.webp",
+                    title: "Coopeuch",
+                    desc: "Accede a beneficios y productos financieros con condiciones preferenciales.",
+                    link: "https://www.coopeuch.cl/",
+                },
+                abastible: {
+                    img: "img/convenio_abastible.webp",
+                    title: "Abastible",
+                    desc: "Descuentos especiales en la compra de gas para tu hogar durante todo el año.",
+                    link: "https://www.abastible.cl/",
+                },
+                lipigas: {
+                    img: "img/convenio_lipigas.webp",
+                    title: "Lipigas",
+                    desc: "Obtén precios rebajados en cargas de gas y servicios asociados para socios.",
+                    link: "https://www.lipigas.cl/",
+                },
+                dental: {
+                    img: "img/convenio_dental.webp",
+                    title: "Clínica Dental",
+                    desc: "Atención odontológica de calidad con aranceles preferenciales para ti y tu familia.",
+                    link: "#",
+                },
             };
-            const modalBg = document.getElementById('modal-bg');
-            const modalContent = document.getElementById('modal-convenio-content');
-            const modalImg = document.getElementById('modal-img');
-            const modalTitle = document.getElementById('modal-title');
-            const modalDesc = document.getElementById('modal-desc');
-            const modalLink = document.getElementById('modal-link');
+            const modalBg = document.getElementById("modal-bg");
+            const modalContent = document.getElementById("modal-convenio-content");
+            const modalImg = document.getElementById("modal-img");
+            const modalTitle = document.getElementById("modal-title");
+            const modalDesc = document.getElementById("modal-desc");
+            const modalLink = document.getElementById("modal-link");
 
-            document.querySelectorAll('.btn-convenio').forEach(btn => {
-                btn.addEventListener('click', function () {
+            document.querySelectorAll(".btn-convenio").forEach((btn) => {
+                btn.addEventListener("click", function () {
                     const key = btn.dataset.modal;
                     const data = conveniosData[key];
                     if (data) {
@@ -523,45 +731,46 @@
                         modalTitle.textContent = data.title;
                         modalDesc.textContent = data.desc;
                         modalLink.href = data.link;
-                        modalBg.classList.add('flex'); // Show modal background
-                        modalBg.classList.remove('hidden');
-                        setTimeout(() => { // Animate modal in
-                            modalBg.classList.add('opacity-100');
-                            modalContent.classList.add('scale-100', 'opacity-100');
-                            modalContent.classList.remove('scale-90', 'opacity-0');
-                        }, 10); // Small delay for transition to apply
+                        modalBg.classList.add("flex");
+                        modalBg.classList.remove("hidden");
+                        setTimeout(() => {
+                            modalBg.classList.add("opacity-100");
+                            modalContent.classList.add("scale-100", "opacity-100");
+                            modalContent.classList.remove("scale-90", "opacity-0");
+                        }, 10);
                     }
                 });
             });
 
             const closeModal = () => {
-                modalBg.classList.remove('opacity-100');
-                modalContent.classList.remove('scale-100', 'opacity-100');
-                modalContent.classList.add('scale-90', 'opacity-0');
+                modalBg.classList.remove("opacity-100");
+                modalContent.classList.remove("scale-100", "opacity-100");
+                modalContent.classList.add("scale-90", "opacity-0");
                 setTimeout(() => {
-                    modalBg.classList.add('hidden');
-                    modalBg.classList.remove('flex');
-                }, 300); // Wait for transition to finish before hiding
+                    modalBg.classList.add("hidden");
+                    modalBg.classList.remove("flex");
+                }, 300);
             };
 
-            document.querySelector('.modal-close').addEventListener('click', closeModal);
-            modalBg.addEventListener('click', (e) => {
+            document
+                .querySelector(".modal-close")
+                .addEventListener("click", closeModal);
+            modalBg.addEventListener("click", (e) => {
                 if (e.target === modalBg) {
                     closeModal();
                 }
             });
 
-            // --- WHATSAPP CONTACT FORM ---
-            const contactForm = document.getElementById('contact-form');
-            contactForm.addEventListener('submit', function (e) {
+            const contactForm = document.getElementById("contact-form");
+            contactForm.addEventListener("submit", function (e) {
                 e.preventDefault();
 
-                const nombre = document.getElementById('nombre').value;
-                const apellido = document.getElementById('apellido').value;
-                const email = document.getElementById('email').value;
-                const celular = document.getElementById('celular').value;
-                const mensaje = document.getElementById('mensaje').value;
-                const whatsappNumber = "56992255546"; // Your WhatsApp number
+                const nombre = document.getElementById("nombre").value;
+                const apellido = document.getElementById("apellido").value;
+                const email = document.getElementById("email").value;
+                const celular = document.getElementById("celular").value;
+                const mensaje = document.getElementById("mensaje").value;
+                const whatsappNumber = "56992255546";
 
                 let messageBody = `*Contacto desde la Web Sindicato2TVN*\n\n`;
                 messageBody += `*Nombre:* ${nombre} ${apellido}\n`;
@@ -572,55 +781,49 @@
                 const encodedMessage = encodeURIComponent(messageBody);
                 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-                window.open(whatsappUrl, '_blank');
+                window.open(whatsappUrl, "_blank");
             });
 
-            // --- AUTOMATIC COPYRIGHT YEAR ---
-            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+            document.getElementById("copyright-year").textContent =
+                new Date().getFullYear();
 
-            // --- SMOOTH SCROLL WITH OFFSET ---
-            const header = document.getElementById('main-header');
-            const scrollLinks = document.querySelectorAll('.scroll-link');
+            const header = document.getElementById("main-header");
+            const scrollLinks = document.querySelectorAll(".scroll-link");
 
-            scrollLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault(); // Prevent default anchor jump
+            scrollLinks.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
 
-                    const targetId = this.getAttribute('href');
+                    const targetId = this.getAttribute("href");
                     const targetElement = document.querySelector(targetId);
 
                     if (targetElement) {
-                        const headerHeight = header.offsetHeight; // Get dynamic header height
-                        // Adjust target position to account for fixed header and add a bit more padding
-                        const targetPosition = targetElement.offsetTop - headerHeight - 20; // Increased padding to 20px
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition =
+                            targetElement.offsetTop - headerHeight - 20;
 
                         window.scrollTo({
                             top: targetPosition,
-                            behavior: 'smooth'
+                            behavior: "smooth",
                         });
 
-                        // Close mobile menu if open
-                        if (mobileMenu.classList.contains('right-0')) {
+                        if (mobileMenu.classList.contains("right-0")) {
                             hideMobileMenu();
                         }
                     }
                 });
             });
 
-
-            // Force a reflow/re-layout on initial load to fix rendering issues
-            window.addEventListener('load', () => {
-                // Initialize AOS again after all content is loaded to ensure animations trigger correctly
+            window.addEventListener("load", () => {
                 AOS.refresh();
-                window.dispatchEvent(new Event('resize')); // Dispatch resize event
-                // Also, explicitly trigger reflow for fixed elements
-                const whatsappFloat = document.querySelector('.whatsapp-float');
+                window.dispatchEvent(new Event("resize"));
+                const whatsappFloat = document.querySelector(".whatsapp-float");
                 if (whatsappFloat) {
-                    whatsappFloat.offsetHeight; // Triggers reflow
+                    whatsappFloat.offsetHeight;
                 }
-                const mobileMenu = document.getElementById('mobile-menu');
+                const mobileMenu = document.getElementById("mobile-menu");
                 if (mobileMenu) {
-                    mobileMenu.offsetHeight; // Triggers reflow
+                    mobileMenu.offsetHeight;
                 }
             });
         });
