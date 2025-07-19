@@ -15,14 +15,14 @@
     <meta property="og:url" content="https://www.sindicato2tvn.cl/">
     <meta property="og:title" content="Sindicato N°2 de TVN - Trabajando por nuestros derechos">
     <meta property="og:description" content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Información sobre convenios, documentos, directiva y más.">
-    <meta property="og:image" content="https://www.sindicato2tvn.cl/img/logo.webp">
+    <meta property="og:image" content="img/logo.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.sindicato2tvn.cl/">
     <meta property="twitter:title" content="Sindicato N°2 de TVN - Trabajando por nuestros derechos">
     <meta property="twitter:description" content="Página oficial del Sindicato N°2 de Televisión Nacional de Chile. Información sobre convenios, documentos, directiva y más.">
-    <meta property="twitter:image" content="https://www.sindicato2tvn.cl/img/logo.webp">
+    <meta property="twitter:image" content="img/logo.webp">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -395,59 +395,99 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Modal */
-        .modal-bg {
+        /* Modal Hazte Socio */
+        .modal-socio-bg {
             display: none;
             position: fixed;
             z-index: 2000;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.7);
             align-items: center;
             justify-content: center;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
-        .modal-bg.active {
+        .modal-socio-bg.active {
             display: flex;
             opacity: 1;
         }
-
-        .modal-convenio {
+        .modal-socio {
             background: var(--color-light);
             border-radius: var(--border-radius);
             box-shadow: var(--shadow-lg);
-            padding: 2.5rem;
-            max-width: 500px;
-            width: 90%;
+            padding: 0;
+            max-width: 900px;
+            width: 98vw;
             text-align: center;
             position: relative;
             transform: translateY(20px);
             transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
         }
-
-        .modal-bg.active .modal-convenio {
+        .modal-socio-bg.active .modal-socio {
             transform: translateY(0);
         }
-
         .modal-close {
             position: absolute;
             top: 15px;
             right: 15px;
             background: none;
             border: none;
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: var(--color-gray);
             cursor: pointer;
             transition: var(--transition);
+            z-index: 10;
         }
-
         .modal-close:hover {
             color: var(--color-primary);
             transform: rotate(90deg);
+        }
+        .modal-socio iframe {
+            border: none;
+            border-radius: 12px;
+            width: 100%;
+            min-height: 800px;
+            height: 80vh;
+            display: block;
+        }
+        @media (max-width: 992px) {
+            .modal-socio {
+                max-width: 98vw;
+                width: 98vw;
+            }
+            .modal-socio iframe {
+                min-height: 600px;
+                height: 65vh;
+            }
+        }
+        @media (max-width: 576px) {
+            .modal-socio {
+                max-width: 96vw;
+                width: 96vw;
+                height: 96vh;
+                margin: 2vw;
+                border-radius: 10px;
+                padding: 0;
+                box-sizing: border-box;
+                align-items: stretch;
+                justify-content: stretch;
+            }
+            .modal-socio iframe {
+                min-height: unset;
+                height: 90vh;
+                width: 100%;
+                border-radius: 10px;
+            }
+            .modal-close {
+                top: 10px;
+                right: 10px;
+                font-size: 2rem;
+            }
         }
 
         /* ==================== DOCUMENTOS SECTION ==================== */
@@ -924,6 +964,7 @@
                     <li><a href="#convenios" class="nav-link">Convenios</a></li>
                     <li><a href="#documentos" class="nav-link">Documentos</a></li>
                     <li><a href="#directiva" class="nav-link">Directiva</a></li>
+                    <li><a href="#" id="btn-socio-menu" class="nav-link">Hazte Socio</a></li>
                     <li><a href="#contacto" class="nav-link">Contáctanos</a></li>
                 </ul>
             </nav>
@@ -939,7 +980,7 @@
             <div class="hero-content">
                 <h1 class="hero-title" data-aos="fade-up">Sindicato N°2 de TVN</h1>
                 <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Trabajando unidos por nuestros derechos y bienestar</p>
-                <a href="#convenios" class="btn hero-btn" data-aos="fade-up" data-aos-delay="200">Ver Convenios</a>
+                <button id="btn-socio-hero" class="btn hero-btn" data-aos="fade-up" data-aos-delay="200">Hazte Socio</button>
             </div>
         </section>
 
@@ -1161,6 +1202,14 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Modal Hazte Socio -->
+    <div id="modal-socio-bg" class="modal-socio-bg">
+        <div class="modal-socio">
+            <button class="modal-close" id="close-modal-socio" aria-label="Cerrar">&times;</button>
+            <iframe src="https://forms.gle/W5CgsvWMQGpZ74fF8" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Header scroll effect
@@ -1240,6 +1289,28 @@
 
             // Copyright year
             document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+            // Modal Hazte Socio
+            const modalSocioBg = document.getElementById('modal-socio-bg');
+            const btnSocioHero = document.getElementById('btn-socio-hero');
+            const btnSocioMenu = document.getElementById('btn-socio-menu');
+            const closeModalSocio = document.getElementById('close-modal-socio');
+
+            function openSocioModal(e) {
+                e.preventDefault();
+                modalSocioBg.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeSocioModal() {
+                modalSocioBg.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            btnSocioHero.addEventListener('click', openSocioModal);
+            btnSocioMenu.addEventListener('click', openSocioModal);
+            closeModalSocio.addEventListener('click', closeSocioModal);
+            modalSocioBg.addEventListener('click', function(e){
+                if(e.target === modalSocioBg){ closeSocioModal(); }
+            });
         });
     </script>
     
