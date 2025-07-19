@@ -597,7 +597,8 @@
         .team-img {
             width: 100%;
             height: 280px;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: top center;
             transition: var(--transition);
         }
 
@@ -695,9 +696,10 @@
         }
 
         .contact-form .btn {
-            width: 100%;
+            width: 50%;
             font-size: 1.1rem;
             padding: 1rem;
+            align-self: center;
         }
 
         /* Full width map */
@@ -1169,7 +1171,7 @@
                     <input type="tel" id="celular" name="celular" placeholder="Celular (ej: 912345678)" required>
                     <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
                     <button type="submit" class="btn btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> Enviar a WhatsApp
+                        <i class="fab fa-whatsapp"></i> Enviar
                     </button>
                 </form>
             </div>
