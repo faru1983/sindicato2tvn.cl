@@ -1,0 +1,924 @@
+/* =================================================================
+   TABLE OF CONTENTS
+   -----------------------------------------------------------------
+   1.  VARIABLES & ROOT
+   2.  GENERAL & RESET
+   3.  REUSABLE COMPONENTS (Buttons, Cards, etc.)
+   4.  HEADER & NAVIGATION
+   5.  HERO SECTION
+   6.  CONVENIOS SECTION
+   7.  DOCUMENTOS SECTION
+   8.  DIRECTIVA SECTION
+   9.  CONTACTO SECTION
+   10. MAP
+   11. FOOTER
+   12. MODALS
+   13. FLOATING BUTTONS (WhatsApp)
+   14. ANIMATIONS & KEYFRAMES
+   15. RESPONSIVE MEDIA QUERIES
+   ================================================================= */
+
+/* 1. VARIABLES & ROOT */
+:root {
+    --color-primary: #E30613;
+    --color-primary-dark: #B8000A;
+    --color-secondary: #F8F9FA;
+    --color-accent: #FFD600;
+    --color-whatsapp: #25D366;
+    --color-whatsapp-dark: #128C7E;
+    --color-dark: #212529;
+    --color-light: #FFF;
+    --color-gray: #6c757d;
+    --color-light-gray: #e9ecef;
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.07);
+    --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.15);
+    
+    --border-radius: 12px;
+    --transition-fast: all 0.3s ease;
+    --transition-smooth: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    --max-width: 1200px;
+}
+
+/* 2. GENERAL & RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 4px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+/* 3. REUSABLE COMPONENTS */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.9rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition-fast);
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-heading);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    background-color: var(--color-primary-dark);
+    color: var(--color-light) !important;
+}
+
+.btn-primary-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    padding: 0.6rem 1.5rem;
+}
+
+.btn-primary-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.btn-whatsapp {
+    background-color: var(--color-whatsapp);
+    border-color: var(--color-whatsapp);
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--color-whatsapp-dark);
+    border-color: var(--color-whatsapp-dark);
+}
+
+/* 4. HEADER & NAVIGATION */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    padding: 1rem 0;
+    transition: all 0.4s ease;
+}
+
+.main-header.scrolled {
+    padding: 0.5rem 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    transition: var(--transition-fast);
+}
+
+.main-header.scrolled .logo {
+    height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--color-dark);
+    position: relative;
+    padding: 0.5rem 0;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: var(--transition-fast);
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--color-dark);
+    z-index: 1001;
+    transition: var(--transition-fast);
+}
+
+.hamburger:hover {
+    color: var(--color-primary);
+}
+
+/* 5. HERO SECTION */
+#inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-light);
+    background: url('../img/fondo.webp') no-repeat center center/cover;
+    position: relative;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(227, 6, 19, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 1.5rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+/* 6. CONVENIOS SECTION */
+#convenios {
+    background-color: var(--color-secondary);
+}
+
+.convenios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.convenio-card {
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color-light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.convenio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition-fast);
+}
+
+.convenio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.convenio-card:hover::before {
+    transform: scaleX(1);
+}
+
+.convenio-card img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto 1.5rem auto;
+    filter: grayscale(80%);
+    opacity: 0.8;
+    transition: var(--transition-fast);
+}
+
+.convenio-card:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.convenio-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+    font-size: 1.25rem;
+}
+
+.convenio-card p {
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.convenio-card .btn {
+    margin-top: auto;
+}
+
+/* 7. DOCUMENTOS SECTION */
+#documentos {
+    background-color: var(--color-light);
+}
+
+.documentos-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.document-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+    border-left: 5px solid transparent;
+}
+
+.document-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--color-primary);
+}
+
+.document-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-right: 1.5rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+.document-info {
+    flex-grow: 1;
+}
+
+.document-info h3 {
+    margin-bottom: 0.25rem;
+    color: var(--color-dark);
+}
+
+.document-info p {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+}
+
+.document-item .btn {
+    padding: 0.7rem 1.5rem;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+/* 8. DIRECTIVA SECTION */
+#directiva {
+    background-color: var(--color-secondary);
+}
+
+.directiva-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+    position: relative;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
+    transition: var(--transition-fast);
+}
+
+.team-card:hover .team-img {
+    transform: scale(1.05);
+}
+
+.team-info {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.team-info h3 {
+    margin-bottom: 0.3rem;
+    color: var(--color-dark);
+}
+.team-email {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    margin-bottom: 0.5rem;
+}
+.team-role {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 80%);
+    opacity: 0;
+    transition: var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+.team-overlay h4 {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+}
+.team-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* 9. CONTACTO SECTION */
+.contacto-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group > input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 50px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.contact-form textarea {
+    border-radius: 20px;
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(227, 6, 19, 0.2);
+}
+
+.contact-form .btn {
+    width: 50%;
+    font-size: 1.1rem;
+    padding: 1rem;
+    align-self: center;
+}
+
+/* 10. MAP */
+.full-width-map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.full-width-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* 11. FOOTER */
+.main-footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-light);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: var(--transition-fast);
+}
+
+.footer-socials a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    transform: translateY(-5px);
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.5rem;
+}
+
+.footer-credits {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5rem;
+}
+
+.footer-credits a {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* 12. MODALS */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-container {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    max-width: 650px;
+    width: 100%;
+    position: relative;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+}
+
+.modal-overlay.active .modal-container {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--color-gray);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    z-index: 10;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--color-primary);
+    transform: rotate(90deg);
+}
+
+/* Modal Convenio - Improved Style */
+.modal-convenio-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2.5rem;
+}
+
+.modal-convenio-img {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.modal-convenio-img img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+.modal-convenio-img img.multi-logo {
+    height: 45px;
+    margin-bottom: 10px;
+}
+.modal-convenio-img img.multi-logo:last-child {
+    margin-bottom: 0;
+}
+
+.modal-convenio-details {
+    flex: 1;
+}
+
+.modal-convenio-details h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.modal-convenio-details p {
+    margin-bottom: 1.5rem;
+    color: var(--color-dark);
+}
+
+.modal-convenio-details .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    border-left: 3px solid var(--color-primary);
+}
+
+.modal-convenio-details .contact-info span {
+    display: flex;
+    align-items: center;
+}
+
+.modal-convenio-details .contact-info i {
+    margin-right: 0.75rem;
+    color: var(--color-primary);
+    width: 20px;
+    text-align: center;
+}
+.modal-convenio-details .contact-info a {
+    color: var(--color-dark);
+}
+.modal-convenio-details .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Socio */
+.modal-socio {
+    max-width: 900px;
+    width: 95vw;
+    height: 90vh;
+    padding: 0;
+    overflow: hidden;
+}
+.modal-socio .modal-content {
+    width: 100%;
+    height: 100%;
+}
+.modal-socio iframe {
+    border: none;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
+}
+
+/* 13. FLOATING BUTTONS (WhatsApp) */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-whatsapp);
+    color: var(--color-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: var(--shadow-md);
+    z-index: 100;
+    transition: var(--transition-fast);
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    background-color: var(--color-whatsapp-dark);
+    transform: scale(1.1);
+    color: var(--color-light) !important;
+    animation-play-state: paused;
+}
+
+/* 14. ANIMATIONS & KEYFRAMES */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* 15. RESPONSIVE MEDIA QUERIES */
+@media (max-width: 992px) {
+    .section-title { font-size: 2.2rem; }
+    .hero-title { font-size: 3rem; }
+    .hero-subtitle { font-size: 1.3rem; }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--color-light);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.active { right: 0; }
+    .nav-link { font-size: 1.2rem; }
+    .hamburger { display: block; }
+    .nav-menu .btn-primary-outline { display: block; margin-top: 1rem; }
+}
+
+@media (max-width: 768px) {
+    section { padding: 4rem 0; }
+    .section-title { font-size: 2rem; margin-bottom: 2.5rem; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+
+    .document-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .document-item .btn { margin-left: 0; width: 100%; }
+    
+    .form-group { flex-direction: column; gap: 1.5rem; }
+    .contact-form .btn { width: 100%; }
+    
+    .full-width-map { height: 350px; }
+
+    .modal-convenio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .modal-convenio-img {
+        margin-bottom: 1rem;
+    }
+    .modal-convenio-details .contact-info {
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title { font-size: 2.2rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .btn { padding: 0.8rem 1.5rem; }
+    
+    .directiva-grid {
+        grid-template-columns: minmax(0, 320px);
+        justify-content: center;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        right: 20px;
+    }
+    .modal-convenio-content { padding: 2rem 1.5rem; }
+    .modal-socio { height: 85vh; }
+}
