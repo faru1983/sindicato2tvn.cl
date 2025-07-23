@@ -585,16 +585,22 @@ section {
 }
 
 /* 10. MAP */
-.full-width-map {
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
 
-.full-width-map iframe {
+/* Footer Map (nuevo tamaño y estilo) */
+.footer-map {
     width: 100%;
-    height: 100%;
+    max-width: 500px;
+    margin: 2rem auto 1.5rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 1px solid var(--color-light-gray);
+}
+.footer-map iframe {
+    width: 100%;
+    height: 200px;
     border: 0;
+    display: block;
 }
 
 
@@ -733,13 +739,6 @@ section {
     width: 100%;
     height: 100px;
     object-fit: contain;
-}
-.modal-convenio-img img.multi-logo {
-    height: 45px;
-    margin-bottom: 10px;
-}
-.modal-convenio-img img.multi-logo:last-child {
-    margin-bottom: 0;
 }
 
 .modal-convenio-details {
