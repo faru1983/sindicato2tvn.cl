@@ -61,9 +61,3 @@ cd sindicato2tvn
 
 Abre `index.html`:
 Simplemente abre el archivo `index.html` en tu navegador web.
-
-## 🤝 Contribución
-
-Este proyecto fue desarrollado por **Felipe Andres Ramirez Urrutiaguer**.
-
-Siéntete libre de bifurcar el repositorio, realizar mejoras y enviar solicitudes de extracción (pull requests).
